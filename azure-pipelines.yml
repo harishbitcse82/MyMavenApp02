@@ -14,5 +14,6 @@ steps:
   displayName: 'Run a one-line script'
 - script: mvn clean install
   displayName: 'Build with Maven'  
-- script: java -jar target/MyMavenApp02-1.0-SNAPSHOT.jar
+#- script: java -jar target/MyMavenApp02-1.0-SNAPSHOT.jar
+- script: mvn exec:java -Dexec.mainClass="com.example.App"
   displayName: 'Running jar'
